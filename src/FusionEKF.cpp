@@ -223,7 +223,7 @@ FusionEKF::ProcessMeasurement(const MeasurementPackage &measurement_pack)
          * measurement function H for laser) to project the predictate
          * state
          */
-        cout << "RADAR" << endl;
+        //cout << "RADAR" << endl;
 
         /*
          * so Basically using Jacobian matrix we are mapping the predicted
@@ -244,7 +244,7 @@ FusionEKF::ProcessMeasurement(const MeasurementPackage &measurement_pack)
         /*
          * Laser updates
          */
-        cout << "LASER" << endl;
+        //cout << "LASER" << endl;
 
         ekf_.R_ = R_laser_;
         ekf_.H_ =  H_laser_;
